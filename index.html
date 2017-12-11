@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Crystal Collector</title>
+
+ 	<!-- Added link to the jQuery Library -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  	<!-- Added a link to Bootstrap-->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+</head>
+<body>
+
+	<div class="jumbotron">
+  	
+  		<h1 class="display-3" id="gameHead">Crystal Collector!</h1>
+  		
+  		<hr class="my-4">
+
+  			<p>You will be given a random number at the beginning of the game</p>
+
+  			<p>There are 4 crystals below. By Clicking on a crystal you will add a specific amount of points to your total score.</p>
+ 			
+ 			<p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+
+ 			<p>The value of each crystal is hidden from you until you click on it.</p>
+
+ 			<p>Each time when the game starts, the values of each crystal will change.</p>
+	
+	</div>
+
+	
+	<div id="imageHolder">
+		<img class="crystalImg" src="assets/images/crystal1.jpg"/>
+		<img class="crystalImg" src="assets/images/crystal2.png"/>
+		<img class="crystalImg" src="assets/images/crystal3.jpg"/>
+		<img class="crystalImg" src="assets/images/crystal4.jpg"/>
+	</div>
+
+	<div id="total"></div>
+	<div id="wins"></div>
+	<div id="losses"></div>
+	<div id="user">Your total score is: <br/> </div>
+
+<script type="text/javascript" src="assets/javascript.js"></script>
+</body>
+</html>
