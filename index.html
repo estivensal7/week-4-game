@@ -4,14 +4,14 @@
 
 	<title>Crystal Collector</title>
 
- 	<!-- Added link to the jQuery Library -->
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+ 
   	<!-- Added a link to Bootstrap-->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+	
 
 </head>
 <body>
@@ -20,7 +20,7 @@
   	
   		<h1 class="display-3" id="gameHead">Crystal Collector!</h1>
   		
-  		<hr class="my-4">
+  		<hr class="my-4" id="gameInstr">
 
   			<p>You will be given a random number at the beginning of the game</p>
 
@@ -35,17 +35,18 @@
 	</div>
 
 	
-	<div id="imageHolder">
-		<img class="crystalImg" src="assets/images/crystal1.jpg"/>
-		<img class="crystalImg" src="assets/images/crystal2.png"/>
-		<img class="crystalImg" src="assets/images/crystal3.jpg"/>
-		<img class="crystalImg" src="assets/images/crystal4.jpg"/>
-	</div>
+	<div id="crystals"></div>
 
-	<div id="total"></div>
-	<div id="wins"></div>
-	<div id="losses"></div>
-	<div id="user">Your total score is: <br/> </div>
+	<h2>Number to guess: <span id="number-to-guess"></span></h2>
+	<h2><span id="status"></span></h2>
+	<h3><span id="wins">Wins: </span></h3>
+	<h3><span id="losses">Losses: </span></h3>
+	<h3><span id="user">Score: </span></h3>
+
+
+	<!-- Added link to the jQuery Library -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 <script type="text/javascript" src="assets/javascript.js"></script>
 </body>

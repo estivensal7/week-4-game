@@ -1,16 +1,41 @@
+.jumbotron {
+	background-color: transparent !important;
+}
+
+body {
+	background-image: url("https://images5.alphacoders.com/862/thumb-1920-862186.jpg");
+}
+
 #gameHead {
 	text-align: center;
+	color: white;
 }
 
 p {
 	text-align: center;
+	color: white;
 }
 
 #imageHolder {
-	margin-left: 375px;
+	margin-left: 35px;
 }
 
 img {
 	width: 150px;
 	height: 150px;
+	margin-left: 35px;
+}
+
+#crystals {
+	margin-left: 280px;
+}
+
+h2 {
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	text-align: center;
+	color: white;
 }
